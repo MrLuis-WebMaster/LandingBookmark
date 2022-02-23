@@ -10,11 +10,12 @@ const BookMark = () => {
     const HandleClick = ( e ) => {
         setOption(e.target.textContent);
     }
+    console.log(styles)
     if (option === "Simple Bookmarking" || option === "") {
         return (
             <div className={styles.Box_Bookmark}>
                 <div className={styles.Box_Bookmark_Button}>
-                    <div className={styles.Box_button,styles.active} >
+                    <div className={`${styles.Box_button} ${styles.active}`} >
                         <button onClick={e=>{HandleClick(e)}}>Simple Bookmarking</button>
                     </div>
                     <div className={styles.Box_button}>
@@ -55,7 +56,7 @@ const BookMark = () => {
                     <div className={styles.Box_button}>
                         <button onClick={e=>{HandleClick(e)}}>Simple Bookmarking</button>
                     </div>
-                    <div className={styles.Box_button,styles.active}>
+                    <div className={`${styles.Box_button} ${styles.active}`}>
                         <button onClick={e=>{HandleClick(e)}}>Speedy Searching</button>
                     </div>
                     <div className={styles.Box_button}>
@@ -85,6 +86,7 @@ const BookMark = () => {
             </div>
         )
     } 
+
     if (option === "Easy Sharing") {
         return (
             <div className={styles.Box_Bookmark}>
@@ -95,7 +97,7 @@ const BookMark = () => {
                     <div className={styles.Box_button}>
                         <button onClick={e=>{HandleClick(e)}}>Speedy Searching</button>
                     </div>
-                    <div className={styles.Box_button,styles.active}>
+                    <div className={`${styles.Box_button} ${styles.active}`}>
                         <button onClick={e=>{HandleClick(e)}}>Easy Sharing</button>
                     </div>
                 </div>

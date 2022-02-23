@@ -10,7 +10,6 @@ const NavBar = () => {
     });
     const handleClick = () => {
         setToggle( prevState => ({active:!prevState.active}))
-        console.log(toggle.active)
     }
     return (
         <nav className={styles.Nav}>

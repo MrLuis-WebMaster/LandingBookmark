@@ -6,5 +6,4 @@ const Button = ({text}) => {
         </button>
     )
 }
-
 export default Button;
