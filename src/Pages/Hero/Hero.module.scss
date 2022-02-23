@@ -1,0 +1,85 @@
+@import "../../Styles/Variables.scss";
+header {
+    margin: 0 4rem;
+    @media only screen and (max-width: 768px) {
+        margin: 0 1rem;
+    }
+}
+.Hero {
+    margin-top: 5rem;
+    display: flex;
+    place-items: center;
+    gap: 10rem;
+    @media only screen and (max-width: 768px) {
+        margin-top: 1rem;
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+    &_info {
+        display: flex;
+        flex-direction: column;
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        @media only screen and (max-width: 768px) {
+
+            h1 {
+                font-size: 2rem;
+                text-align: center;  
+            }
+            p {
+                text-align: center;
+                font-size: 1rem;
+            }
+        }
+        &_button {
+            display: flex;
+            gap: 1rem;
+
+            button {
+                &:nth-child(1) {
+                    background-color: $SoftBlue;
+                    color: #FFFF;
+                    border: 1px solid $SoftBlue;
+                    &:hover{
+                        @include HoverButton($SoftBlue)
+                    }
+                }
+                &:nth-child(2) {
+                    background-color: #ececec;
+                    border: 1px solid #ececec;
+                    &:hover {
+                        transition: all ease-in-out .4s;
+                        background-color: transparent;
+                        border: 1px solid #0a0a0a;
+
+                    }
+                }
+
+            }
+        }
+
+    }
+    &_img {
+        flex-basis: 100%;
+        &::before {
+            content:"";
+            display: block;
+            z-index: -1;
+            height: 50%;
+            width: 40%;
+            position: absolute;
+            right: 0%;
+            top: 70%;
+            transform: translate(0px, -50%);
+            border-bottom-left-radius: 10rem;
+            background-color: $SoftBlue;
+            @media only screen and (max-width: 768px) {
+                height: 20%;
+                top: 35%;
+                width: 70%;
+            }
+        }
+    }
+}

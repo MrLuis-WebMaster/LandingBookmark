@@ -1,0 +1,40 @@
+@import "../../Styles/Variables.scss";
+.Nav {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    padding: 2rem 0;
+    &_MenuBurguer {
+        @media only screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+    &_logo {
+        height: 1.8rem;
+    }
+    &_enlaces {
+       display: flex;
+       place-items: center;
+       gap: 2.5rem;
+       @media only screen and (max-width: 768px) {
+        display: none;
+        }
+       a {
+           text-transform: uppercase;
+           &:last-child {
+            font-weight: $fontBold;
+            color: #FFFF;
+            background-color: $SoftRed;
+            border-radius: .3rem;
+            padding: .6rem 3rem;
+            border: 1px solid $SoftRed;
+            &:hover {
+                transition: all ease-in-out .4s;
+                background-color: transparent;
+                color: $SoftRed;
+            }
+        } 
+       }
+
+    }
+}

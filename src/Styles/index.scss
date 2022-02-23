@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+@import "./Variables.scss";
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #0a0a0a;
+  &:hover {
+      transition: all ease-in-out .5s;
+      color: $SoftRed;
+  }
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+h1,h2, h3,h4 {
+  color: $VeryDarkBlue;
+  margin: 0;
+}
+
+p {
+  color: $GrayishBlue;
+  line-height: 1.5;
+}

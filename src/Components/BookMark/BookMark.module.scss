@@ -1,0 +1,98 @@
+@import "../../Styles/Variables.scss";
+
+.Box_Bookmark {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin: 0 4rem;
+    @media only screen and (max-width: 768px) {
+        margin: 0 1rem;
+    }
+    .Box_Bookmark_Button {
+        display: flex;
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+        .Box_button {
+            @media only screen and (max-width: 768px) {
+                border-bottom: 1px solid $GrayishBlue;
+                padding: 0rem 4rem;
+                
+                &:nth-child(1) {
+                    border-top: 1px solid $GrayishBlue;
+                }
+            }
+        }
+        .active {
+            button {
+                color: #0a0a0a;
+                border-bottom: 3px solid $SoftRed; 
+            }
+        }
+        button {
+            background: none;
+            outline: none;
+            border: none;
+            padding: 1.8rem 3rem;
+            border-bottom: 3px solid $GrayishBlue;
+            color: $GrayishBlue;
+            &:hover{
+                transition: all ease-in-out .2s;
+                color: $SoftRed;
+                cursor: pointer;
+            }
+            @media only screen and (max-width: 768px) {
+                padding: 1rem;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.BookMark {
+    margin: 5rem 0;
+    display: flex;
+    place-items: center;
+    gap: 10rem;
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+    &_info {
+        display: flex;
+        flex-direction: column;
+        @media only screen and (max-width: 768px) {
+            text-align: center;
+        }
+        &_button {
+
+            button {
+                background-color: $SoftBlue;
+                color: #FFFF;
+                border: 1px solid $SoftBlue;
+                &:hover{
+                    @include HoverButton($SoftBlue)
+                }
+            }
+        }
+    }
+    &_img {
+        flex-basis: 100%;
+        &::before {
+            content:"";
+            display: block;
+            z-index: -1;
+            height:45%;
+            width: 50%;
+            position: absolute;
+            left: -10%; 
+            top: 180%;  
+            border-bottom-right-radius: 10rem;
+            background-color: $SoftBlue;
+            @media only screen and (max-width: 768px) {
+                height: 30%;
+                top: 160%;
+                width: 80%;
+            }
+        }
+    }
+}

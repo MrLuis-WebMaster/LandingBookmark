@@ -1,0 +1,37 @@
+@import "../../Styles/Variables.scss";
+.Card {
+    margin: 1rem;
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.05);
+    border-radius: .8rem;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    height: max-content;
+    padding: 2rem;
+    &_info {
+        text-align: center;
+        h3 {
+            margin-top: 1.2rem;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    .Card_button {
+        padding: 2rem;
+        button {
+            background-color: $SoftBlue;
+            color: #ffff;
+            border: 1px solid $SoftBlue;
+            &:hover {
+                @include HoverButton($SoftBlue);
+            }
+        }
+    }
+    &:nth-child(2) {
+        margin-top: 4rem;
+    }
+    &:nth-child(3) {
+        margin-top: 6rem;
+    }
+}

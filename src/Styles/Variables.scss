@@ -1,0 +1,33 @@
+//Typography
+$fontSize:18px;
+$fontWeigth:400;
+$fontBold:500;
+
+
+//Colors
+
+// Primary Colors
+$SoftBlue:hsl(231, 69%, 60%);
+$SoftRed:hsl(0, 94%, 66%);
+
+// Neutral colors
+$GrayishBlue: hsl(229, 8%, 60%);
+$VeryDarkBlue:hsl(229, 31%, 21%);
+
+
+//Mixins
+
+@mixin flex-colum-center {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+@mixin HoverButton ($color){
+    transition: all ease-in-out .4s;
+    background-color: transparent;
+    border: 1px solid $color;
+    color: $color;
+    cursor: pointer;
+    
+}

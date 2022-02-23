@@ -1,0 +1,53 @@
+@import "../../Styles/Variables.scss";
+.NavMobile {
+    background-color: rgba(37, 43, 70, .95);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    &_enlaces {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        gap: 1rem;
+        a {
+            text-align: center;
+            font-size: 1.2rem;
+            padding: 2rem;
+            width: 100%;
+            color: #FFFF;
+            border-bottom: 1px solid #FFFF;
+            &:nth-child(1) {
+                border-top: 1px solid #FFFF;
+            }
+            &:nth-child(4) {
+                border: 3px solid #FFFF;
+                border-radius: .4rem;
+                font-weight: $fontBold;
+            }
+        }
+    }
+    &_logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img {
+            height: 1rem;
+            width: 1rem;
+        }
+    }
+
+
+    &_icon {
+        display: flex;
+        gap: 2rem;
+        place-items: center;
+        place-content: center;
+
+    }
+}
