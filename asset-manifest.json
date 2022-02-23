@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MrLuis-WebMaster/LandingBookmark/static/css/main.e999991d.css",
-    "main.js": "/MrLuis-WebMaster/LandingBookmark/static/js/main.2503cf8f.js",
+    "main.js": "/MrLuis-WebMaster/LandingBookmark/static/js/main.26966cc4.js",
     "static/js/787.27b27bf7.chunk.js": "/MrLuis-WebMaster/LandingBookmark/static/js/787.27b27bf7.chunk.js",
     "static/media/illustration-features-tab-3.svg": "/MrLuis-WebMaster/LandingBookmark/static/media/illustration-features-tab-3.a4206aab7946773b29b702492d2d014b.svg",
     "static/media/illustration-features-tab-2.svg": "/MrLuis-WebMaster/LandingBookmark/static/media/illustration-features-tab-2.e933bd6d921c537d7743e08ea4ec488e.svg",
@@ -17,11 +17,11 @@
     "static/media/icon-hamburger.svg": "/MrLuis-WebMaster/LandingBookmark/static/media/icon-hamburger.4385fd507d24f37ccbb3ae359b5c9555.svg",
     "static/media/icon-arrow.svg": "/MrLuis-WebMaster/LandingBookmark/static/media/icon-arrow.8174203a5d4fc44f5247b825de6e2158.svg",
     "main.e999991d.css.map": "/MrLuis-WebMaster/LandingBookmark/static/css/main.e999991d.css.map",
-    "main.2503cf8f.js.map": "/MrLuis-WebMaster/LandingBookmark/static/js/main.2503cf8f.js.map",
+    "main.26966cc4.js.map": "/MrLuis-WebMaster/LandingBookmark/static/js/main.26966cc4.js.map",
     "787.27b27bf7.chunk.js.map": "/MrLuis-WebMaster/LandingBookmark/static/js/787.27b27bf7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e999991d.css",
-    "static/js/main.2503cf8f.js"
+    "static/js/main.26966cc4.js"
   ]
 }
