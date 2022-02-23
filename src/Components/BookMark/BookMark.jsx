@@ -10,7 +10,6 @@ const BookMark = () => {
     const HandleClick = ( e ) => {
         setOption(e.target.textContent);
     }
-    console.log(styles)
     if (option === "Simple Bookmarking" || option === "") {
         return (
             <div className={styles.Box_Bookmark}>

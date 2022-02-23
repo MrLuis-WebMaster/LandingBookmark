@@ -8,7 +8,7 @@
     @media only screen and (max-width: 768px) {
         margin: 0 1rem;
     }
-    .Box_Bookmark_Button {
+    &_Button {
         display: flex;
         @media only screen and (max-width: 768px) {
             flex-direction: column;
@@ -17,7 +17,6 @@
             @media only screen and (max-width: 768px) {
                 border-bottom: 1px solid $GrayishBlue;
                 padding: 0rem 4rem;
-                
                 &:nth-child(1) {
                     border-top: 1px solid $GrayishBlue;
                 }
